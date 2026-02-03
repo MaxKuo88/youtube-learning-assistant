@@ -45,7 +45,7 @@ with st.sidebar:
     st.markdown("這是一個 AI 驅動的學習助手，能幫助你快速掌握 YouTube 影片的核心知識。")
 
 # Main Content
-st.title("🎓 Max’s Mindset - YouTube 影片萃取學習助手")
+st.markdown("## 🎓 Max’s Mindset - YouTube 影片萃取學習助手")
 st.markdown("輸入 YouTube 影片網址，自動生成**逐字稿**與**重點萃取學習筆記**。")
 
 # Input Section
