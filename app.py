@@ -17,12 +17,6 @@ st.set_page_config(
 # Custom CSS for styling
 st.markdown("""
 <style>
-    .report-box {
-        background-color: #f0f2f6;
-        padding: 20px;
-        border-radius: 10px;
-        border-left: 5px solid #ff4b4b;
-    }
     .stButton>button {
         width: 100%;
         background-color: #ff4b4b;
@@ -106,9 +100,7 @@ if analyze_btn:
                             analysis_result = response.text
                             
                             st.markdown("### 📊 萃取學習報告")
-                            st.markdown('<div class="report-box">', unsafe_allow_html=True)
                             st.markdown(analysis_result)
-                            st.markdown('</div>', unsafe_allow_html=True)
                             
                         except Exception as e:
                             st.error(f"⚠️ AI 分析失敗：{str(e)}")
